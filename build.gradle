@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.intellias.ferry'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    implementation 'org.locationtech.jts:jts-core:1.19.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    testImplementation 'org.assertj:assertj-core:3.21.0'
+    testImplementation 'com.h2database:h2:2.2.224'
+    testImplementation 'org.dbunit:dbunit:2.7.3'
+    testImplementation 'org.apache.commons:commons-csv:1.11.0'
+}
+
+test {
+    useJUnitPlatform()
+}
