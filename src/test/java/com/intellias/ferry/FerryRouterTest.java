@@ -83,7 +83,7 @@ class FerryRouterTest {
         // From (90, 5), inside Alba. Port Dunia East is 10 units away on Dunia.
         Optional<Port> result = ferryRouter.findNearestConnectingPort(new Coordinate(90, 5));
 
-        assertTrue(result.isPresent(), "Expected to find an port on another island");
+        assertTrue(result.isPresent(), "Expected to find a port on another island");
         assertEquals("Port Dunia East", result.get().getName());
     }
 
