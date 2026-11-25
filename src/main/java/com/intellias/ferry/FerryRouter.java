@@ -1,6 +1,7 @@
 package com.intellias.ferry;
 
 import java.util.List;
+import java.util.*;
 import java.util.Optional;
 
 /**
@@ -9,7 +10,7 @@ import java.util.Optional;
  * <p>A ferry only runs between different islands, so the port returned must lie on an
  * island other than the one the passenger is standing on.
  */
-public class FerryRouter {
+public class FerryRouter extends Polygon{
 
     /**
      * @param islands list of islands with their polygon borders. Islands may touch, so a
@@ -20,10 +21,15 @@ public class FerryRouter {
     public FerryRouter(List<Island> islands, List<Port> ports) {
         throw new NotImplementedException();
     }
-
+    System.out.println(islands);
+    System.out.println(ports);
+    
     /**
+     * 
+     * 
      * Should find the nearest port that lies on a different island than {@code from},
      * if it is within 20 distance units.
+     *
      *
      * @param from location the passenger departs from
      * @return the nearest reachable port, or empty if {@code from} is not on any island,

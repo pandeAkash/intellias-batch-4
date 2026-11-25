@@ -27,7 +27,7 @@ an island.
 
 ### Implementation Requirements
 
-- Read the existing codebase before starting
+- Read the existing codebase before starting 
 - Implement the constructor and `findNearestConnectingPort` in [FerryRouter]
 - In the constructor: store the islands and ports in whatever form you need
 - In `findNearestConnectingPort`:
