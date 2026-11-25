@@ -17,7 +17,14 @@ public class FerryRouter {
      * @param ports   list of ports. A port that does not lie on any island is not
      *                reachable by ferry.
      */
-    public FerryRouter(List<Island> islands, List<Port> ports) {
+
+    FerryRouter()
+    {
+        Integer islands;
+        Integer ports;
+    }
+    public FerryRouter(List<Island> islands, List<Port> ports) 
+    {
         throw new NotImplementedException();
     }
 
@@ -30,7 +37,22 @@ public class FerryRouter {
      *         if no port lies on a different island, or if the nearest such port is more
      *         than 20 distance units away
      */
-    public Optional<Port> findNearestConnectingPort(Coordinate from) {
+    public Optional<Port> findNearestConnectingPort(Coordinate from) 
+    {
+        try{
+
+        if(islands == NULL)
+        {
+            return NULL;
+        }
+        if(ports <=20)
+        {
+            return ports;
+        }
+    }
+    catch(Exception e)
+    {
         throw new NotImplementedException();
+    }
     }
 }
